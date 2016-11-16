@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>KIKI - Project manager options</title>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse"
+			id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="projectMaintaince.php">Project Maintenance</a></li>
+				<li><a href="donerList.php">Donor list options</a></li>
+				<li><a href="projectForm.php">Add a project</a></li>
+				<li><a href="deletion.php">Delete project</a></li>
+				<li><a href="donation.php">Make a donation</a></li>
+				<li><a href = "main.php">main page</a></li>
+				<li><a href="logout.php">Log out</a></li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
+<div class="row">
+	<project-thumbnail project-object="project"
+		ng-repeat="project in projects"></project-thumbnail>
+</div>
